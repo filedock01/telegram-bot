@@ -7,7 +7,6 @@ const path = require('path');
 
 require('dotenv').config();
 
-const serviceAccount = require('./serviceAccount.json');
 
 admin.initializeApp({
   credential: admin.credential.cert({
