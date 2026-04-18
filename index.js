@@ -127,10 +127,10 @@ bot.on('video', async (ctx) => {
       views: 2
     };
 
-    await db.collection("Videos").doc(id).set(videoData);
+    await db.collection("videos").doc(id).set(videoData);
 
     ctx.reply("✅ Video uploaded successfully!");
-    ctx.reply(`🔗 Link: ${netlifyUrl}`);
+    ctx.reply(`🔗 Link: https://filedock.in/${id}`);
 
     // Cleanup
     fs.unlinkSync(tempFilePath);
