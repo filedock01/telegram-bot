@@ -4,3 +4,7 @@
 
 .env
 serviceAccount.json
+/node_modules
+node_modules
+/.env
+/serviceAccount.json
