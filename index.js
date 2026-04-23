@@ -130,7 +130,7 @@ bot.on('video', async (ctx) => {
     await db.collection("videos").doc(id).set(videoData);
 
     ctx.reply("✅ Video uploaded successfully!");
-    ctx.reply(`🔗 Link: https://filedock.in/${id}`);
+    ctx.reply(`https://filedock.in/${id}`);
 
     // Cleanup
     fs.unlinkSync(tempFilePath);
